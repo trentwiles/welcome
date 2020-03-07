@@ -135,7 +135,7 @@ O00OOOOOOOOOOOOOOOOOkdoddoodkkkkkkkkkkdc;;;;;coxxxxxxxxddddddddddddoooooooolllll
         <br />
         <div class="welcome">
           <h2 class="font-effect-3d-float">
-            Welcome to Riverside Rocks!
+            The Official Website of Riverside Rocks
           </h2>
         </div>
         <br />
@@ -180,6 +180,15 @@ O00OOOOOOOOOOOOOOOOOkdoddoodkkkkkkkkkkdc;;;;;coxxxxxxxxddddddddddddoooooooolllll
             return i;
           }
         </script>
+        <!-- This script forces HTTPS -->
+        <script>
+          if (location.protocol != "https:") {
+            location.href =
+              "https:" +
+              window.location.href.substring(window.location.protocol.length);
+          }
+        </script>
+        <!-- End forced HTTPS -->
         <div id="txt" class="txt"></div>
       </center>
     </div>
